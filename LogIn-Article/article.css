@@ -1,0 +1,171 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; 
+    background-color: #f4f4f4; 
+}
+
+h1, h2 {
+    color: #333; 
+}
+
+
+.header {
+    background-color: #FFA500; 
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: left; 
+}
+
+.logo {
+    max-width: 100px; 
+    margin-right: 20px; 
+}
+
+.campus-info {
+    text-align: left;
+}
+
+.campus-info h1, .campus-info h2, .campus-info p {
+    margin: 0; 
+}
+
+
+main {
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px; 
+}
+
+
+.news-section {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ff8c00; 
+}
+
+.news-section h2 {
+    color: #333; 
+}
+
+
+.news-item {
+    display: flex; 
+    align-items: center;
+    margin: 20px 0; 
+    padding: 15px;
+    background-color: white; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s; 
+}
+
+.news-item:hover {
+    transform: scale(1.02); 
+}
+
+.news-item.left {
+    flex-direction: row; 
+}
+
+.news-item.right {
+    flex-direction: row-reverse; 
+}
+
+.news-image {
+    width: 50%; 
+    height: auto; 
+    max-height: 600px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+.news-content {
+    width: 50%; 
+    padding: 20px; 
+}
+
+.news-item h3 {
+    color: #ff8c00; 
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.news-item p {
+    color: #333; 
+    line-height: 1.6; 
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; 
+    color: white; 
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Link styles */
+a {
+    color: #FFA500; 
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+
+.button {
+    background-color: #FFA500; 
+    color: white; 
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e59400; 
+}
+
+
+@media (max-width: 768px) {
+    .logo-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .logo {
+        margin-bottom: 10px; 
+    }
+
+    .news-item {
+        flex-direction: column;
+    }
+
+    .news-image, .news-content {
+        width: 100%; 
+    }
+
+    .news-image {
+        max-height: 200px; 
+    }
+}
